@@ -4,7 +4,7 @@ def sistema_biblioteca():
     prestamos_activos = 0
     transacciones_prestamo = 0
     
-    print("¡Bienvenido al sistema de gestión de préstamos de la Biblioteca Central!\n")
+    print("¡Bienvenido al sistema de gestión de préstamos de la Biblioteca Central!")
     
     while True:
         print("===")
@@ -16,14 +16,14 @@ def sistema_biblioteca():
         print("4. Historial de préstamos")
         print("5. Salir")
         
-        opcion = input("\nSelecciona una opción (1-5): ")
+        opcion = input("Selecciona una opción (1-5): ")
         
         if opcion == '1':
             print(f"Libros actualmente libres en la biblioteca: {libros_disponibles}")
             
         elif opcion == '2':
             try:
-                cantidad = int(input("\n¿Cuántos libros deseas pedir prestados / reservar?: "))
+                cantidad = int(input("¿Cuántos libros deseas pedir prestados / reservar?: "))
                 if cantidad <= 0:
                     print("Error: La cantidad solicitada debe ser mayor a 0.")
                 elif cantidad > libros_disponibles:
@@ -38,7 +38,7 @@ def sistema_biblioteca():
                 
         elif opcion == '3':
             try:
-                cantidad = int(input("\n¿Cuántos libros deseas devolver?: "))
+                cantidad = int(input("¿Cuántos libros deseas devolver?: "))
                 if cantidad <= 0:
                     print("Error: Debes devolver al menos 1 libro.")
                 elif (libros_disponibles + cantidad) > capacidad_maxima:
