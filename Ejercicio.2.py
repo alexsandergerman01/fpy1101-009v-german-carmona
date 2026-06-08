@@ -49,7 +49,7 @@ def sistema_biblioteca():
                     prestamos_activos -= cantidad
                     print(f"Devolución exitosa. Has devuelto {cantidad} libro(s).")
             except ValueError:
-                print("⚠️ Error: Por favor, ingresa un número entero válido.")
+                print("Error: Por favor, ingresa un número entero válido.")
                 
         elif opcion == '4':
             print("HISTORIAL DE PRÉSTAMOS")
